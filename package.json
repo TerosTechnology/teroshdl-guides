@@ -1,0 +1,21 @@
+{
+  "name": "teroshdl_guides",
+  "version": "0.0.1",
+  "author": "Teros Technology <terostechnology@gmail.com>",
+  "license": "GPL",
+  "private": true,
+  "scripts": {
+    "build": "rimraf dist && npm run -s og-image && npm run -s deck",
+    "deck": "marp --no-stdin slides/TerosHDL_guides.md -o dist/index.html && npm run -s windows && npm run -s linux && ncp assets dist/assets",
+    "windows": "marp --no-stdin slides/windows.md -o dist/windows.html && marp --no-stdin slides/windows.md -o dist/windows.pdf",
+    "linux": "marp --no-stdin slides/linux.md -o dist/linux.html && marp --no-stdin slides/linux.md -o dist/linux.pdf",
+    "now-build": "npm run -s deck",
+    "og-image": "marp slides/TerosHDL_guides.md -o dist/og-image.jpg",
+    "start": "marp -ps ."
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "^1.7.2",
+    "ncp": "^2.0.0",
+    "rimraf": "^3.0.2"
+  }
+}
