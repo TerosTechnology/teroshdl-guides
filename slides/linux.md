@@ -25,7 +25,7 @@ _paginate: false
 ```bash
 tar -xvf <download_path/release_file>
 rm <download_path/release_file>
-echo "source <oss-cad-suite_path>/environment" > ~/.bashrc
+echo "source <oss-cad-suite_path>/environment" >> ~/.bashrc
 ```
 ---
 # Configure Yosys path 
