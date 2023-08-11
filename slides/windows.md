@@ -24,7 +24,7 @@ _paginate: false
   + Iverilog
   + GTKWave
   + Verilator
-- Msys2: `make` , `git`
+- Msys2: `pacman -S make` , `pacman -S git`
 
 ---
 
@@ -45,4 +45,4 @@ _paginate: false
 
 # TerosHDL configuration
 
-- [Configuration instructions](https://terostechnology.github.io/terosHDLdoc/configuration/tools.html)
+- [Configuration instructions](https://terostechnology.github.io/terosHDLdoc/docs/getting_started/configuration)
